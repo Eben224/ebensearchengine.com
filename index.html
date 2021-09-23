@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Working Google Search Engine Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="main">
+            <img src="google.png">
+            <div class="searchbox">
+                <input type="text" name="" class="query" value=" ">
+                <div class="icons">
+                    <div><img src="search.jpg">
+                        <div><img src="mic.jpg">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="searchbutton">Boakye Search</button>
+
+                    </div>
+                </div>
+    </section>
+    <script>
+        let query = document.querySelector(".query");
+        let searchbutton = document.querySelector(".searchbutton");
+
+        searchbutton.onclick = function() {
+            let url = "https://www.google.com/seach?q=" + query.value;
+            widow.open(url, 'self');
+        }
+    </script>
+</body>
+
+</html>
